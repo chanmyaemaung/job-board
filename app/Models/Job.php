@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Job extends Model
 {
     use HasFactory;
+
+    public static array $experience = ['entry', 'intermediate', 'senior'];
+
+    public static array $category = ['IT', 'Marketing', 'Finance', 'Sales', 'Customer Support'];
 }
