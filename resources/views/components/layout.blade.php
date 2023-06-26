@@ -10,7 +10,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="antialiased">
+<body class="antialiased mx-auto max-w-2xl bg-slate-200 text-slate-700 mt-10">
     {{ $slot }}
 
     @vite('resources/js/app.js')

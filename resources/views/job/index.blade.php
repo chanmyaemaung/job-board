@@ -1,7 +1,7 @@
 <x-layout>
     @foreach ($jobs as $job)
-        <div>
-            <h1>{{ $job->title }}</h1>
-        </div>
+        <x-card class="mb-4 last:mb-0 p-4">
+            {{ $job->title }}
+        </x-card>
     @endforeach
 </x-layout>
