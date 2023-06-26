@@ -11,7 +11,7 @@
 </head>
 
 <body class="antialiased">
-    <h1 class="text-4xl">Hello, World!</h1>
+    {{ $slot }}
 
     @vite('resources/js/app.js')
 </body>
