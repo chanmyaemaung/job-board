@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <p class="text-sm text-slate-500 mb-4">{!! nl2br(__($job->description)) !!}</p>
+    
 
     {{ $slot }}
 </x-card>
