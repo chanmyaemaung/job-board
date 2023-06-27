@@ -2,6 +2,8 @@
     <x-breadcrumbs class="mb-4" :links="['Jobs' => route('jobs.index'), $job->title => '#']" />
     <x-job-card :$job>
         <p class="text-sm text-slate-500 mb-4">{!! nl2br(__($job->description)) !!}</p>
+
+        <x-link-button :href="route('jobs.applications.create', $job)">Apply</x-link-button>
     </x-job-card>
 
     <x-card class="mb-4 p-4">
@@ -17,7 +19,7 @@
                             <a href="{{ route('jobs.show', $otherJob) }}">
                                 {{ $otherJob->title }}
                             </a>
-                        </div>  
+                        </div>
                         <div class="text-xs">
                             {{ $otherJob->created_at->diffForHumans() }}
                         </div>
