@@ -6,7 +6,7 @@
 
     <x-card class="mb-4 p-4">
         <h2 class="mb-4 text-lg font-medium">
-            More {{ $job->employer->company_name }} Jobs
+            More {{ $job->employer->company_name }}'s Jobs
         </h2>
 
         <div class="text-sm text-slate-500">
@@ -17,7 +17,7 @@
                             <a href="{{ route('jobs.show', $otherJob) }}">
                                 {{ $otherJob->title }}
                             </a>
-                        </div>
+                        </div>  
                         <div class="text-xs">
                             {{ $otherJob->created_at->diffForHumans() }}
                         </div>
