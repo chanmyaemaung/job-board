@@ -19,9 +19,16 @@ class JobApplicationController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Job $job, Request $request)
     {
-        //
+        $job->jobApplication()->create([
+            'user_id' => request()->user()->id,
+            ...$request->validate([
+                'expected_salary' => 'required|numeric|min:1|max:1000000'
+            ])
+        ]);
+
+        return redirect()->route('jobs.show', $job)->with('success', 'Job application submitted successfully!');
     }
 
     /**
