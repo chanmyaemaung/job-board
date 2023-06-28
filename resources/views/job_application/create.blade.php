@@ -12,12 +12,12 @@
             @csrf
 
             <div class="mb-4">
-                <label for="expected_salary" class="mb-2 block text-sm font-medium text-slate-900">Expected Salary</label>
-                <x-text-input type="number" name="expected_salary" />
+                <x-label for="expected_salary" :required="true" aria-required="true">Expected Salary</x-label>
+                <x-text-input type="number" name="expected_salary" id="expected_salary" />
             </div>
 
             <div class="mb-4">
-                <label for="uploadCV" class="mb-2 block text-sm font-medium text-slate-900">Upload CV</label>
+                <x-label for="uploadCV" :required="true" aria-required="true">Upload CV</x-label>
                 <x-text-input type="file" name="cv" id="uploadCV" />
             </div>
 
