@@ -8,22 +8,22 @@
             <div class="mb-4 grid grid-cols-2 gap-4">
                 <div>
                     <x-label for="title" :required="true" aria-required="true">Job Title</x-label>
-                    <x-text-input name="title" id="title" />
+                    <x-text-input name="title" id="title" :value="old('title')" />
                 </div>
 
                 <div>
                     <x-label for="location" :required="true" aria-required="true">Job Location</x-label>
-                    <x-text-input name="location" id="location" />
+                    <x-text-input name="location" id="location" :value="old('location')" />
                 </div>
 
                 <div class="col-span-2">
                     <x-label for="salary" :required="true" aria-required="true">Salary</x-label>
-                    <x-text-input name="salary" id="salary" type="number" />
+                    <x-text-input name="salary" id="salary" type="number" :value="old('salary')" />
                 </div>
 
                 <div class="col-span-2">
                     <x-label for="description" :required="true" aria-required="true">Description</x-label>
-                    <x-text-input name="description" id="description" type="textarea" />
+                    <x-text-input name="description" id="description" type="textarea" :value="old('description')" />
                 </div>
 
                 <div>

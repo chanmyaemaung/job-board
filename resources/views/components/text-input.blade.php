@@ -22,7 +22,7 @@
                 'ring-red-300' => $errors->has($name),
             ]) />
     @else
-        <textarea id="{{ $id }}" name="{{ $name }}" @class([
+        <textarea rows="5" cols="5" id="{{ $id }}" name="{{ $name }}" @class([
             'w-full rounded-md border-0 py-1.5 px-2.5 text-sm ring-2 focus:ring-2',
             'pr-8' => $formRef,
             'ring-slate-300' => !$errors->has($name),
