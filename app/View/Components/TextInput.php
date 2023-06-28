@@ -17,6 +17,7 @@ class TextInput extends Component
         public ?string $placeholder = null,
         public ?string $formRef = null,
         public ?string $type = 'text',
+        public ?string $id = null,
     )
     {
         //
