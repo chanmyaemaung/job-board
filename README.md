@@ -93,7 +93,7 @@ To run the Laravel CL Job Board application locally, you need to have the follow
 
 ## Support
 
-If you encounter any issues while using the VO Login Logo plugin, don't hesitate to contact me at info@chanmyaemaung.net. I'll be happy to assist you.
+If you encounter any issues while using the CL Job Board, don't hesitate to contact me at info@chanmyaemaung.net. I'll be happy to assist you.
 
 ## Contribute
 
